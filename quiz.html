@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="theme-color" content="#4CAF50">
+  <meta name="description" content="Jouer au Quiz FCFA">
+  <title>Quiz FCFA - Jeu</title>
+  <link rel="icon" type="image/png" href="/icon-192.png">
+  <link rel="stylesheet" href="/src/css/styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="quiz-header">
+      <div class="quiz-progress">
+        Question <span id="currentQuestion">1</span>/10
+      </div>
+      <div class="quiz-timer" id="timer">20</div>
+      <div class="quiz-score">
+        Score: <span id="score">0</span>/10
+      </div>
+    </div>
+
+    <div class="card quiz-card">
+      <h2 id="questionText" class="question-text">Chargement de la question...</h2>
+
+      <div id="answersContainer" class="answers-container">
+      </div>
+
+      <div id="feedback" class="feedback"></div>
+    </div>
+
+    <div id="resultsCard" class="card results-card" style="display: none;">
+      <h2>🎉 Partie terminée !</h2>
+      <div class="results-summary">
+        <div class="result-item">
+          <span class="result-label">Score:</span>
+          <span class="result-value" id="finalScore">0/10</span>
+        </div>
+        <div class="result-item">
+          <span class="result-label">Gain:</span>
+          <span class="result-value result-gain" id="finalGain">0 FCFA</span>
+        </div>
+      </div>
+      <a href="/dashboard.html" class="btn btn-primary btn-large">
+        Retour au tableau de bord
+      </a>
+    </div>
+  </div>
+
+  <script type="module" src="/src/js/quiz.js"></script>
+</body>
+</html>

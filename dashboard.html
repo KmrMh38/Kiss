@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="theme-color" content="#4CAF50">
+  <meta name="description" content="Tableau de bord Quiz FCFA">
+  <title>Quiz FCFA - Tableau de bord</title>
+  <link rel="icon" type="image/png" href="/icon-192.png">
+  <link rel="stylesheet" href="/src/css/styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>💰 Quiz FCFA</h1>
+      <button id="logoutBtn" class="btn-logout">Déconnexion</button>
+    </div>
+
+    <div class="card">
+      <div class="user-info">
+        <h2 id="userName">Chargement...</h2>
+        <div class="balance">
+          <span class="balance-label">Solde:</span>
+          <span class="balance-amount" id="userBalance">0 FCFA</span>
+        </div>
+        <div class="games-info">
+          <span id="gamesPlayed">0/5</span> parties jouées aujourd'hui
+        </div>
+      </div>
+
+      <button id="playBtn" class="btn btn-primary btn-large">
+        🎮 Jouer maintenant
+      </button>
+    </div>
+
+    <div class="card">
+      <h3>📊 Historique des gains</h3>
+      <div id="gamesHistory" class="games-history">
+        <div class="loading">Chargement...</div>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="/src/js/dashboard.js"></script>
+</body>
+</html>
