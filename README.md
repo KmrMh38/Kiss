@@ -1,3 +1,4 @@
+#kiss
 # Quiz FCFA - Application de Quiz avec Gains
 
 Application web mobile (PWA) permettant de jouer à des quiz et de gagner des points en FCFA.
@@ -167,3 +168,7 @@ Pour toute question ou problème, créer une issue sur le dépôt GitHub.
 ## Licence
 
 MIT
+=======
+# Kiss
+C'est un site tout simplement pas touche !
+
